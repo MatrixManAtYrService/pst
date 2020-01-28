@@ -6,3 +6,6 @@ No promises at this stage.
 
 Debian Packages Installed:
  - texlive-latex-base
+
+Arch Packages Installed:
+ - texlive-core

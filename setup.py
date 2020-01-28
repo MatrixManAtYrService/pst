@@ -1,13 +1,13 @@
 from setuptools import setup
-setup(name='slicetool',
+setup(name='realm',
             version='0.1.0.dev1',
-            description='A structural experiment involving axioms',
+            description='Consider a graph where the edges are theorems...',
             url='https://github.com/MatrixManAtYrService/pst',
             author='Matt Rixman',
             author_email='github@matt.rixman.org',
-            packages=['pst'],
+            packages=['realm', 'content'],
             python_requires= '>=3.6',
-            install_requires=['sh', 'pymysql', 'pdflatex', 'jinja2', 'tinydb'],
+            install_requires=['sh', 'jinja2', 'pytest'],
             entry_points={'console_scripts' : [
 
                           # generate a document by name

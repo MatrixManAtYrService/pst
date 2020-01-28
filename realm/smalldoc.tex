@@ -1,0 +1,17 @@
+\documentclass{article}
+\begin{document}
+
+\VAR{preamble}
+
+\hoffset=-1in
+\voffset=-1in
+\setbox0\hbox{\begin{tabular}{cccc}
+
+\VAR{content}
+
+\end{tabular}}
+\pdfpageheight=\dimexpr\ht0+\dp0\relax
+\pdfpagewidth=\wd0
+\shipout\box0
+
+\stop
