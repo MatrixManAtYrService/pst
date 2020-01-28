@@ -3,6 +3,9 @@ from realm.template import get_tex_template
 
 class HelloWorld(Text):
 
+    def name(self):
+        return 'hello'
+
     def content_latex(self):
         return get_tex_template(__file__, 'content.tex').render()
 

@@ -3,7 +3,6 @@ from inspect import cleandoc
 import jinja2
 import os
 from jinja2 import Template
-import pathlib
 
 from realm.template import get_tex_template
 
@@ -12,6 +11,10 @@ from realm.template import get_tex_template
 # Something representable on paper
 class Text(ABC):
 
+    # used in filenames and such
+    @abstractmethod
+    def name(self):
+        pass
 
     # returns a string containing LaTeX which represents the thing
     @abstractmethod
